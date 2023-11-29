@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@500&family=Roboto:wght@300&display=swap');
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*cabeçalho*/
+.links{
+    display: flex;
+    text-decoration: none;
+    
+}
+.link{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.opções{
+    width: 100vw;
+    cursor: default;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 100%;
+    height: 120px;
+}
+
+.links ul:nth-child(Entrar){
+    background-color: red;
+}
+
+@media screen and (max-width:1000px) {
+   .pesquisa{
+    display: flex;
+    flex-direction: column;
+   }
+
+  
+ }
+
+/*navegação*/
+.container-1{
+    background-color:  gray;
+    border-radius: 5px;
+    width: 100%;
+   
+}
+
+#pesqui{
+    width: 100%;
+}
+.input-wrapper{
+    padding: 8px;
+   display: flex;
+   align-items: center;
+   gap: 60px;
+   background-color: #ffffff57;
+   border-radius: 5px;
+   width: 40em;
+   height: 30px;
+}
+
+@media screen and (max-width:1000px) {
+   .input-wrapper{
+    width: 100%;
+   }
+}
+
+#bar{
+    width: 730px;
+}
+
+.input-wrapper img{
+    cursor: pointer;
+    
+}
+
+.input-wrapper input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.input-wrapper input:focus-visible {
+    outline: none;
+}
+
+button, #lupa {
+    background-color: transparent;
+    border: transparent;
+}
+
+#lupa{
+    width: 20px;
+    height: 20px;
+}
+.menu-bar .on{
+    right: 0;
+    padding: 0;
+}
+.menu 
+li.links ul{
+    text-align: center;
+    padding: 0;
+}
+
+.link{
+    font-family: Bebas Neue;
+    font-size: 15px;
+}
+.links a:hover{
+    color: darkgreen;
+    font-size: 20px;
+}
+.pesquisa{
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+}
+
+
+
+
+.opções{
+    margin-top: 0 ;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+    font-family: Bebas Neue;
+}
+.beleza{
+    flex: 1;
+    transition: 0.3s;
+}
+.beleza:hover{
+    background-color: #4f554f1a;
+    cursor: pointer;
+}
+li.opções ul{
+    text-align: center;
+    padding-inline-start: 0;
+}
+li{
+    list-style-type: none;
+    margin-left: 0;
+}
+
+
+
+
+/*cupom*/
+.cupom a:link{
+    text-decoration: none;
+}
+.cupom{
+    padding: 10px;
+    font-family: Bebas Neue;
+    display: flex;
+    cursor: pointer;
+ 
+}
+
+#cupom{
+    color: black;
+}
+
+/*main*/
+
+main{
+    width: 80%;
+}
+
+.slide_s1 img{
+    width: 100%;
+
+}
+
+/*cards de lançamentos*/
+.lancamento{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 50px;
+    align-items: center;
+}
+
+.lancamento h1{
+    font-family: Bebas Neue;
+}
+
+
+.cards{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 13px;
+
+}
+
+.card{
+    border-radius: 6px;
+    background-color: rgba(1, 49, 1, 0.061);
+    width: 250px;
+    height: 450px;
+    text-align: center;
+    font-family: Bebas Neue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+   
+  
+}
+
+.card img{
+    width:;
+}
+
+
+.card button{
+    color: aliceblue;
+     height: 34px;
+     width: 150px;
+     border-radius: 16px;
+     background-color: darkgreen;
+     border: none;
+     cursor: pointer;
+     font-family: Bebas Neue;
+ }
+
+ @media screen and (max-width:700px) {
+  
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} }
+ 
+
+.card h1{
+    font-size: 20px;
+    
+}
+
+.card p{
+    font-size: 15px;
+}
+
+/*aside*/
+.container-principal{
+    display: flex;
+    gap: 10px;
+}
+aside{
+    width: 20%;
+    height: 70em;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.lateral{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.lateral div{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lateral div:hover{
+    background-color: rgba(0, 0, 0, 0.111);
+}
+
+
+.option img{
+    width: 70px;
+}
+
+@media screen and (max-width:700px) {
+.lateral{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 100px;
+
+}
+
+   .lateral div{
+    width: 60px;
+    height: 60px;
+   }
+
+   .option img{
+    width: 30px;
+   }
+
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.description:hover{
+    color: green;
+   
+}
+
+.description h1{
+    font-family: Bebas Neue;
+    font-size: 30px;
+}
+
+.description p{
+    font-family: Bebas Neue;
+    font-size: 15px;
+    width: 80%;
+}
+
+.description p:hover{
+    font-size: 20px;
+}
+
+@media screen and (max-width:1300px) {
+    .description h1, p{
+        display: none;
+    }
+ 
+ }
+
+
+
+
+
+
+/*Rodapé*/
+.container{
+    max-width: 100vw;
+    margin-top: 70px;
+    background-color: grey;
+   text-align: center;
+    
+}
+
+
+
+
+
+
+
+  
